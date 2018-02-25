@@ -65,7 +65,7 @@ var score = 0;
 var prior_questions = [];
 
 var replaceHeading = function() {
-    var head = $("<span>Totally True Foo!</span>");
+    var head = $("<span>Fun Facts</span>");
     $('h1').find("span").remove();
     $('h1').append(head);
 };
@@ -132,50 +132,63 @@ var updateScore = function() {
 };
 var updateRank = function() {
     if (score == 10){
-        $('.rank').text('Totall Bull**** Master');
+        $('.rank').text('Master Bull****er');
         $('.rank-msg').text('Prefect score!)');
     } else if (score >= 7 && score <=  9) {
-        $('.rank').text('BSer');
-        $('.rank-msg').text('You are full of ****');
+        $('.rank').text('Kinda good at bull****ing');
+        $('.rank-msg').text('Your bullshitting skills could use a little work.');
     } else if (score >= 4 && score <= 6) {
-        $('.rank').text('Liar');
+        $('.rank').text('Time Traveler');
         $('.rank-msg').text('You may not be the best, but your not the worst.');
     } else if (score >= 1 && score <= 3) {
-        $('.rank').text('Squarish tendencies');
-        $('.rank-msg').text('You better straighten out your actw');
+        $('.rank').text('Time Traveling Sidekick');
+        $('.rank-msg').text('Squareish tendencies.');
     } else if (score == 0) {
-        $('.rank').text('Square');
-        $('.rank-msg').text('Go back to square camp!');
+        $('.rank').text('Totall Square.');
+        $('.rank-msg').text('Might want to check out https://freebscamp.com');
     }
 };
 var quiz_questions = {
     1: {
         "icon": "book",
-        "question": "Why did trump win?",
+        "question": "Why did Donald Trump win the election",
         "options": {
+            // 1: "Sup wichuu???",
+            // 2: "Not too much, how are you?",
+            // 3: "Hello my name is *****",
+            // 4: "Nice weather today...",
+            // 5: "Wanna be my friend?"
             1: "Trump had the greater amount of votes overall",
             2: "Despite having a less votes than Hillary; He had greater in house support within the senate votes.",
             3: "According to the Clinton Foundation; the Sith used the force to influence election votes.",
             4: "voodoo",
             5: "No-one knows..."
         },
+        },
         "answer": 3,
-        "answer-exp": "Classified"
+        "answer-exp": "According to the CIA and the Sith themselves they were using the force for years to ensure Donald Trumps success.",
         
-    },
+        },
+    
     2: {
         "icon": "clock-o",
         "question": "What commonly used kitchen item is openly part of the illuminati?",
         "options": {
             1: "The lost sock in the bed",
             2: "The phenomenom of all the good food disappearing and even roomates can't find it.",
-            3: "OOH, PICK ME!!!",
-            4: "The 'Bread-clip...'",
-            5: "~"
+            3: "pick me",
+            4: "How do you know I am not the right answere?",
+            5: ""
         },
         "answer": 4,
-        "answer-exp": "After a loaf of bread is opened unarguably the bread clip then proceds to enter another dimmension",
-      
+        "answer-exp": "Who invented the concept of  trivia game",
+        "options": {
+            1: "Rick from the Walking dead.",
+            2: "That really smart Greek guy",
+            3: "Batman Johnson",
+            4: "Ancient Aliens",
+            5: "Austin Powers"
+        },
     },
     3: {
         "icon": "clock-o",
@@ -201,23 +214,25 @@ var quiz_questions = {
             5: "23y942"
         },
         "answer": 4,
-        "answer-exp": "You'll be licking that ****er all day if you don't give in and take a bite."
+        "answer-exp": "You'll be licking this fucker all day if you don't give in and take a bite."
     },
     5: {
         "icon": "male",
-        "question": "Sup?",
+        "question": "",
         "options": {
-            1: "Sup wichuu???",
-            2: "Not too much, how are you?",
-            3: "Hello my name is *****",
-            4: "Nice weather today...",
-            5: "Wanna be my friend?"
+            1: "About Time (2013)",
+            2: "The Time Machine (1960)",
+            3: "Source Code (2011)",
+            4: "The Terminator (1984)",
+            5: "Looper (2012)"
         },
         "answer": 1,
-        "answer-exp": "..."
+        "answer-exp": "In About Time (2013), the main character is informed by his father that the men in his family have the ability to travel through time at will. After reaching a certain age, they simply have to find a dark place and concentrate on a time (within their own life) to which they wish to travel."
     },
-  
-};
+    
+
+    };
+// };
 
 /*
 
