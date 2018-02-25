@@ -60,7 +60,7 @@ $(document).ready(function() {
 
 var num = 0;
 var count = 0;
-var count_limit = 10;
+var count_limit = 5;
 var score = 0;
 var prior_questions = [];
 
@@ -131,16 +131,16 @@ var updateScore = function() {
     $('.score').text(score);
 };
 var updateRank = function() {
-    if (score == 10){
+    if (score == 5){
         $('.rank').text('Totall Bull**** Master');
         $('.rank-msg').text('Prefect score!)');
-    } else if (score >= 7 && score <=  9) {
+    } else if (score >= 7 && score <=  4) {
         $('.rank').text('BSer');
         $('.rank-msg').text('You are full of ****');
-    } else if (score >= 4 && score <= 6) {
+    } else if (score >= 4 && score <= 3) {
         $('.rank').text('Liar');
         $('.rank-msg').text('You may not be the best, but your not the worst.');
-    } else if (score >= 1 && score <= 3) {
+    } else if (score >= 1 && score <= 1) {
         $('.rank').text('Squarish tendencies');
         $('.rank-msg').text('You better straighten out your actw');
     } else if (score == 0) {
